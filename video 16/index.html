@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectorsincss</title>
+</head>
+<style>
+    /* class selector */
+    .red{
+        color: red;
+    }
+    /* id selector */
+    #green{
+        color: green;
+    }
+    /* child selector - for direct child*/
+    div > p{
+        color: blue;
+    }
+    /* descendent selector */
+    div p{
+        color: rgb(206, 119, 13);
+    }
+    /* universal selector */
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    /* pseudo selectors */
+    a:link{
+        color: rgb(132, 132, 102);
+    }
+    a:visited{
+        color: blueviolet;
+    }
+    a:active{
+        background-color: red;
+    }
+    a:hover{
+        background-color: palevioletred;
+    }
+
+    
+</style>
+<body>
+    <div class="red">
+        hi i am good
+    </div>
+    <div id="green">
+        how about you
+    </div>
+    <div>
+        <p>everyone is good in some or another way</p>
+    </div>
+
+    <div>
+        <article>
+            <p>i m a good girl</p>
+        </article>
+    </div>
+    <a href="https://www.google.com"> go to google</a>
+    
+</body>
+</html>
