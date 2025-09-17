@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float and clear</title>
+    <style>
+        img{
+            float: right;
+        }
+
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
+        }
+
+        .card{
+            border: 2px solid red;
+        }
+
+        .card :nth-child(3){
+            background-color: aqua;
+            clear: right;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="https://www.google.com/imgres?q=images%20download&imgurl=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F1563356%2Fpexels-photo-1563356.jpeg%3Fcs%3Dsrgb%26dl%3Dpexels-thatguycraig000-1563356.jpg%26fm%3Djpg&imgrefurl=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Ffree%2520download%2F&docid=4CKlqN5v0s5IKM&tbnid=jGKf-g3aXbZC9M&vet=12ahUKEwi8yfPD86yLAxWLslYBHQP-CUwQM3oECBkQAA..i&w=5472&h=3648&hcb=2&itg=1&ved=2ahUKEwi8yfPD86yLAxWLslYBHQP-CUwQM3oECBkQAA" alt="" width="233px" height="233px">
+        <div class="card"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem consequuntur, mollitia voluptates odit impedit consequatur error ut vitae blanditiis. Nemo quod fugiat ipsam!</p></div>
+        <div class="card">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore dolorum iusto perspiciatis qui aliquid excepturi esse ad ea. Odio dolorum harum eveniet quae, quod soluta natus, dolore in corporis itaque nesciunt neque voluptate. Ducimus molestias dolor hic? Sunt quis commodi laborum facilis libero, optio illum?</div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero in molestiae, officia, cumque neque tenetur suscipit odit tempore iusto aperiam velit excepturi possimus sit eius tempora doloribus saepe optio itaque molestias perspiciatis dolorum eveniet magni. Velit repudiandae ipsa nesciunt ducimus, consequuntur illum similique magnam repellat.</div>
+    </div>
+    
+</body>
+</html>
