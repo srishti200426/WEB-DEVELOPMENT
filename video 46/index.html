@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS animations</title>
+    <style>
+        .container{
+            background-color: purple;
+            height: 80vh;
+            width: 30vw;
+        }
+        .box{
+            width: 34px;
+            height: 45px;
+            /* background-color: aqua; */
+            /* animation-name: harryKaAnimation; */
+            /* animation-duration: 3s; */
+            /* animation-iteration-count: 2; */
+            /* animation-iteration-count: infinite; */
+            /* animation-timing-function: ease-out; */
+            /* animation-timing-function: cubic-bezier(0.78, 0.06, 0, 1);
+            animation-delay: 2s; */
+            /* animation-direction: reverse; */
+            /* animation-direction: alternate-reverse;
+            animation-play-state: paused; */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: harryKaAnimation 2s ease-in-out 3s 1  ,
+            harry2 3s ease-in-out 3s 1;
+
+        }
+
+
+        @keyframes harryKaAnimation {
+            from{
+                background-color: red;
+            }
+            to{
+                transform: translateX(1000px);
+                background-color: blue;
+            }
+            
+        }
+
+        /* @keyframes harry2 {
+            0%{
+                transform: rotate(100deg);
+            }
+            20%{
+                transform: rotate(200deg);
+            }
+            50%{
+                transform: rotate(220deg);
+            }
+            80%{
+                transform: rotate(300deg);
+            }
+            100%{
+                transform: rotate(310deg);
+            }
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
+</body>
+</html>
